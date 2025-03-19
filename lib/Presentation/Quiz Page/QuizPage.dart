@@ -21,7 +21,7 @@ class _QuizScreenState extends State<QuizScreen> {
 
   int currentQuestionIndex = 0;
   int score = 0;
-  int timer = 1000;
+  int timer = 15;
   late Timer questionTimer;
   bool answered = false;
 
@@ -48,7 +48,7 @@ class _QuizScreenState extends State<QuizScreen> {
       questionTimer.cancel();
       setState(() {
         currentQuestionIndex++;
-        timer = timer;
+        timer = 15;
         answered = false;
       });
       startTimer();
