@@ -25,6 +25,7 @@ class _QuizScreenState extends State<QuizScreen> {
   late Timer questionTimer;
   bool answered = false;
 
+
   @override
   void initState() {
     super.initState();
@@ -90,7 +91,7 @@ class _QuizScreenState extends State<QuizScreen> {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Question",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 24),),
+              child: Text("Question ${currentQuestionIndex+1}",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 24),),
             ),
             Container(
               padding: EdgeInsets.all(5),
